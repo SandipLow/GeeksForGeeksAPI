@@ -5,8 +5,7 @@
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/issues-closed/arnoob16/GeeksForGeeksAPI?style=for-the-badge">
-<img src="https://img.shields.io/github/issues-pr-closed/arnoob16/GeeksForGeeksAPI?color=green&style=for-the-badge">
+Forked from <a href="https://github.com/arnoob16/GeeksForGeeksAPI">arnoob16/GeeksForGeeksAPI</a>
 </p>
 
 ---
@@ -21,9 +20,15 @@
 
 ## Endpoints
 
-To access the API, there is only 1 endpoint, *https://geeks-for-geeks-api.vercel.app/yourGeeksForGeeksUsername*
+To access the API, there is 2 endpoints, 
 
-`Sample URL` - https://geeks-for-geeks-api.vercel.app/arnoob16
+1. *https://geeks-for-geeks-stats.vercel.app/userdata/yourGeeksForGeeksUsername* - This endpoint will give you all the data of the user.
+
+`Sample URL` - https://geeks-for-geeks-stats.vercel.app/userdata/sandiplowsnuf
+
+2. *https://geeks-for-geeks-stats.vercel.app/stats/yourGeeksForGeeksUsername* - This endpoint will give you an svg image of the user's profile stats.
+
+`Sample URL` - https://geeks-for-geeks-stats.vercel.app/stats/sandiplowsnuf
 
 ## How was it built:
 The API was built using Web Scraping the profile page and a server deployed on web.
@@ -56,16 +61,17 @@ The API was built using Web Scraping the profile page and a server deployed on w
 ```
 {
     "info": {
-        "userName": "arnoob16",
+        "userName": "aganswiar",
         "profilePicture": "https://media.geeksforgeeks.org/img-practice/user_web-1598433228.svg",
-        "instituteRank": "415",
-        "currentStreak": "00",
-        "maxStreak": "929",
-        "institution": "SRM Institute of Science and Technology ",
-        "languagesUsed": "Java, C++, Python",
-        "codingScore": "224",
-        "totalProblemsSolved": "95",
-        "monthlyCodingScore": ""
+        "instituteRank": "527",
+        "currentStreak": "03",
+        "maxStreak": "1170",
+        "institution": "National Institute of Technology, Durgapur (NIT Durgapur) ",
+        "languagesUsed": "C++, Java, Python",
+        "campusAmbassador": "algo_artisan_sandip",
+        "codingScore": "357",
+        "totalProblemsSolved": "144",
+        "monthlyCodingScore": "28"
     },
     "solvedStats": {
         "school": {
@@ -73,32 +79,39 @@ The API was built using Web Scraping the profile page and a server deployed on w
             "questions": []
         },
         "basic": {
-            "count": 16,
+            "count": 19,
             "questions": [
                 {
-                    "question": "Cyclically rotate an array by one",
-                    "questionUrl": "https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/0"
+                    "question": "Set the rightmost unset bit",
+                    "questionUrl": "https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/0"
                 },
                 {
-                    "question": "Union of two arrays",
-                    "questionUrl": "https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/0"
+                    "question": "Odd or Even",
+                    "questionUrl": "https://practice.geeksforgeeks.org/problems/odd-or-even3618/0"
+                },
+                ...
+            ]
+        },
+        "easy": {
+            "count": 71,
+            "questions": [
+                {
+                    "question": "Array Leaders",
+                    "questionUrl": "https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/0"
                 },
                 {
-                    "question": "Middle of Three",
-                    "questionUrl": "https://practice.geeksforgeeks.org/problems/middle-of-three2926/0"
-                }
+                    "question": "Disjoint set (Union-Find)",
+                    "questionUrl": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/0"
+                },
+                ...
             ]
         },
         "hard": {
-            "count": 2,
+            "count": 1,
             "questions": [
                 {
-                    "question": "Merge Without Extra Space",
-                    "questionUrl": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/0"
-                },
-                {
-                    "question": "Return two prime numbers",
-                    "questionUrl": "https://practice.geeksforgeeks.org/problems/return-two-prime-numbers2509/0"
+                    "question": "Alien Dictionary",
+                    "questionUrl": "https://practice.geeksforgeeks.org/problems/alien-dictionary/0"
                 }
             ]
         }
