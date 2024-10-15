@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="280" viewBox="0 0 495 280" fill="none">
+    <style>
+        .header {
+            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            fill: #d500f9;
+            animation: fadeInAnimation 0.8s ease-in-out forwards;
+        }
+        
+        .stat {
+            font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif;
+            fill: #333;
+        }
+    
+        .easy {
+            fill: #00a152;
+        }
+
+        .medium {
+            fill: #ff6d00;
+        }
+    
+        .hard {
+            fill: #f50057;
+        }
+        
+        .stagger {
+            opacity: 0;
+            animation: fadeInAnimation 0.3s ease-in-out forwards;
+        }
+        
+        @keyframes fadeInAnimation {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+
+    <!-- Background and Header -->
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="494" fill="#fffefe" stroke="#e0e0e0"/>
+    <g transform="translate(25, 35)">
+        <image href="{{ userdata.info.profilePicture }}" x="0" y="-10" height="50" width="50" clip-path="circle(25px at 25px 25px)" />
+        <text x="60" y="15" class="header">{{ userdata.info.userName }}'s GfG Stats</text>
+    </g>
+
+    <!-- Profile Information Section -->
+    <g transform="translate(25, 80)">
+        <g class="stagger" style="animation-delay: 450ms">
+            <text class="stat" y="12.5">{{ userdata.info.institution }}</text>
+        </g>
+
+        <g class="stagger" style="animation-delay: 600ms" transform="translate(0, 25)">
+            <text class="stat bold" y="12.5">Institute Rank :</text>
+            <text class="stat" x="250" y="12.5">{{ userdata.info.instituteRank }}</text>
+        </g>
+
+        <g class="stagger" style="animation-delay: 750ms" transform="translate(0, 50)">
+            <text class="stat bold" y="12.5">Coding Score :</text>
+            <text class="stat" x="250" y="12.5">{{ userdata.info.codingScore }}</text>
+        </g>
+
+        <g class="stagger" style="animation-delay: 900ms" transform="translate(0, 75)">
+            <text class="stat bold" y="12.5">Total Problems Solved :</text>
+            <text class="stat" x="250" y="12.5">{{ userdata.info.totalProblemsSolved }}</text>
+        </g>
+    </g>
+
+    <!-- Solved Questions Breakdown  -->
+    <g transform="translate(25, 180)">
+        <g class="stagger" style="animation-delay: 1050ms">
+            <text class="stat bold easy" y="12.5">Easy Questions Solved :</text>
+            <text class="stat easy" x="250" y="12.5">{{ userdata.solvedStats.easy.count }}</text>
+        </g>
+
+        <g class="stagger" style="animation-delay: 1200ms" transform="translate(0, 25)">
+            <text class="stat bold medium" y="12.5">Medium Questions Solved :</text>
+            <text class="stat medium" x="250" y="12.5">{{ userdata.solvedStats.medium.count }}</text>
+        </g>
+
+        <g class="stagger" style="animation-delay: 1350ms" transform="translate(0, 50)">
+            <text class="stat bold hard" y="12.5">Hard Questions Solved :</text>
+            <text class="stat hard" x="250" y="12.5">{{ userdata.solvedStats.hard.count }}</text>
+        </g>
+    </g>
+</svg>

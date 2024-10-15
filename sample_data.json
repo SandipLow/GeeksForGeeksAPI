@@ -1,0 +1,617 @@
+{
+    "info": {
+      "userName": "aganswiar",
+      "profilePicture": "https://media.geeksforgeeks.org/img-practice/user_web-1598433228.svg",
+      "instituteRank": "527",
+      "currentStreak": "03",
+      "maxStreak": "1170",
+      "institution": "National Institute of Technology, Durgapur (NIT Durgapur) ",
+      "languagesUsed": "C++, Java, Python",
+      "campusAmbassador": "algo_artisan_sandip",
+      "codingScore": "357",
+      "totalProblemsSolved": "144",
+      "monthlyCodingScore": "28"
+    },
+    "solvedStats": {
+      "school": {
+        "count": 0,
+        "questions": []
+      },
+      "basic": {
+        "count": 19,
+        "questions": [
+          {
+            "question": "Set the rightmost unset bit",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/0"
+          },
+          {
+            "question": "Odd or Even",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/odd-or-even3618/0"
+          },
+          {
+            "question": "Swap two numbers",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/swap-two-numbers3844/0"
+          },
+          {
+            "question": "Doubly linked list Insertion at given position",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/0"
+          },
+          {
+            "question": "Count Linked List Nodes",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/0"
+          },
+          {
+            "question": "Linked List Insertion At End",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/0"
+          },
+          {
+            "question": "Array Subset",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/array-subset-of-another-array2317/0"
+          },
+          {
+            "question": "Check Equal Arrays",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/check-if-two-arrays-are-equal-or-not3847/0"
+          },
+          {
+            "question": "Sum Of Digits",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/sum-of-digits1742/0"
+          },
+          {
+            "question": "Rotate Array by One",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/0"
+          },
+          {
+            "question": "Palindromic Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/palindromic-array-1587115620/0"
+          },
+          {
+            "question": "Value equal to index value",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/value-equal-to-index-value1330/0"
+          },
+          {
+            "question": "Postorder Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/postorder-traversal/0"
+          },
+          {
+            "question": "Preorder Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/preorder-traversal/0"
+          },
+          {
+            "question": "Inorder Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/inorder-traversal/0"
+          },
+          {
+            "question": "Maximum Occuring Character",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/0"
+          },
+          {
+            "question": "Peak element",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/peak-element/0"
+          },
+          {
+            "question": "Sorted Array Search",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/who-will-win-1587115621/0"
+          },
+          {
+            "question": "Largest Element in Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/0"
+          }
+        ]
+      },
+      "easy": {
+        "count": 71,
+        "questions": [
+          {
+            "question": "Array Leaders",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/0"
+          },
+          {
+            "question": "Disjoint set (Union-Find)",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/0"
+          },
+          {
+            "question": "Geek Jump",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/geek-jump/0"
+          },
+          {
+            "question": "DFS of Graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/0"
+          },
+          {
+            "question": "BFS of graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/0"
+          },
+          {
+            "question": "N meetings in one room",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/0"
+          },
+          {
+            "question": "Remove Duplicates",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/remove-duplicates3034/0"
+          },
+          {
+            "question": "Bit Manipulation",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/bit-manipulation-1666686020/0"
+          },
+          {
+            "question": "Even Odd",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/even-odd/0"
+          },
+          {
+            "question": "K-th Bit is Set or Not",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/0"
+          },
+          {
+            "question": "Binary Tree Representation",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/binary-tree-representation/0"
+          },
+          {
+            "question": "Introduction to Trees",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/introduction-to-trees/0"
+          },
+          {
+            "question": "Find pairs with given sum in doubly linked list",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/0"
+          },
+          {
+            "question": "Remove duplicates from a sorted doubly linked list",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/0"
+          },
+          {
+            "question": "Find length of Loop",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-length-of-loop/0"
+          },
+          {
+            "question": "Sort a linked list of 0s, 1s and 2s",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/0"
+          },
+          {
+            "question": "K-Pangrams",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/k-pangrams0909/0"
+          },
+          {
+            "question": "Reverse a Doubly Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/0"
+          },
+          {
+            "question": "Introduction to Doubly Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/introduction-to-doubly-linked-list/0"
+          },
+          {
+            "question": "Delete node in Doubly Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/0"
+          },
+          {
+            "question": "Search in Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/search-in-linked-list-1664434326/0"
+          },
+          {
+            "question": "Array to Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/introduction-to-linked-list/0"
+          },
+          {
+            "question": "Second Largest",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/second-largest3735/0"
+          },
+          {
+            "question": "String Rotated by 2 Places",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/0"
+          },
+          {
+            "question": "Find first repeated character",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-first-repeated-character4108/0"
+          },
+          {
+            "question": "Minimum distance in an Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimum-distance-between-two-numbers/0"
+          },
+          {
+            "question": "Non Repeating Character",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/non-repeating-character-1587115620/0"
+          },
+          {
+            "question": "First Repeating Element",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/first-repeating-element4018/0"
+          },
+          {
+            "question": "Frequencies of Limited Range Array Elements",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0"
+          },
+          {
+            "question": "Find Transition Point",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-transition-point-1587115620/0"
+          },
+          {
+            "question": "Anagram",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/0"
+          },
+          {
+            "question": "Two Sum - Pair with Given Sum",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/key-pair5616/0"
+          },
+          {
+            "question": "Reverse Words",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/0"
+          },
+          {
+            "question": "Parenthesis Checker",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/0"
+          },
+          {
+            "question": "Array Duplicates",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-duplicates-in-an-array/0"
+          },
+          {
+            "question": "Minimize the sum of product",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimize-the-sum-of-product1525/0"
+          },
+          {
+            "question": "Find all pairs with a given sum",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-all-pairs-whose-sum-is-x5808/0"
+          },
+          {
+            "question": "Convert array into Zig-Zag fashion",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/convert-array-into-zig-zag-fashion1638/0"
+          },
+          {
+            "question": "Equilibrium Point",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/equilibrium-point-1587115620/0"
+          },
+          {
+            "question": "Missing in Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/0"
+          },
+          {
+            "question": "Count the elements",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/count-the-elements1529/0"
+          },
+          {
+            "question": "Xoring and Clearing",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/xoring-and-clearing/0"
+          },
+          {
+            "question": "Reverse Bits",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/reverse-bits3556/0"
+          },
+          {
+            "question": "Count Digits",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/count-digits5716/0"
+          },
+          {
+            "question": "Party of Couples",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/alone-in-couple5507/0"
+          },
+          {
+            "question": "Symmetric Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/symmetric-tree/0"
+          },
+          {
+            "question": "Right View of Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/0"
+          },
+          {
+            "question": "Left View of Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/0"
+          },
+          {
+            "question": "Identical Trees",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/0"
+          },
+          {
+            "question": "Height of Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/height-of-binary-tree/0"
+          },
+          {
+            "question": "Level order traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/level-order-traversal/0"
+          },
+          {
+            "question": "Count ways to N'th Stair",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/count-ways-to-nth-stairorder-does-not-matter1322/0"
+          },
+          {
+            "question": "Play With OR",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/play-with-or5515/0"
+          },
+          {
+            "question": "Check If Circular Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/circular-linked-list/0"
+          },
+          {
+            "question": "Delete Middle of Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/delete-middle-of-linked-list/0"
+          },
+          {
+            "question": "Middle of a Linked List",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/0"
+          },
+          {
+            "question": "Palindrome String",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/0"
+          },
+          {
+            "question": "Balanced Tree Check",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/0"
+          },
+          {
+            "question": "Queue Reversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/queue-reversal/0"
+          },
+          {
+            "question": "Search insert position of K in a sorted array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/0"
+          },
+          {
+            "question": "Floor in a Sorted Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/0"
+          },
+          {
+            "question": "Binary Search",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/binary-search-1587115620/0"
+          },
+          {
+            "question": "Check if array is sorted",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/0"
+          },
+          {
+            "question": "Linked List Matrix",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/linked-list-matrix/0"
+          },
+          {
+            "question": "Largest Pair Sum",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/pair-sum--120604/0"
+          },
+          {
+            "question": "Max distance between same elements",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/max-distance-between-same-elements/0"
+          },
+          {
+            "question": "Shortest path from 1 to n",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/shortest-path-from-1-to-n0156/0"
+          },
+          {
+            "question": "Print adjacency list",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/0"
+          },
+          {
+            "question": "Sum of dependencies in a graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/sum-of-dependencies-in-a-graph5311/0"
+          },
+          {
+            "question": "Delete Alternate Nodes",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/delete-alternate-nodes/0"
+          },
+          {
+            "question": "Reorganize The Array",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/reorganize-the-array4810/0"
+          }
+        ]
+      },
+      "medium": {
+        "count": 53,
+        "questions": [
+          {
+            "question": "Maximum Score from Subarray Minimums",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/0"
+          },
+          {
+            "question": "Longest Sub-Array with Sum K",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/0"
+          },
+          {
+            "question": "Partitions with Given Difference",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/partitions-with-given-difference/0"
+          },
+          {
+            "question": "Perfect Sum Problem",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/0"
+          },
+          {
+            "question": "Subset Sum Problem",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/0"
+          },
+          {
+            "question": "Minimum Spanning Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/0"
+          },
+          {
+            "question": "Geek's Training",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/geeks-training/0"
+          },
+          {
+            "question": "Fractional Knapsack",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/0"
+          },
+          {
+            "question": "Minimal Cost",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimal-cost/0"
+          },
+          {
+            "question": "Introduction to DP",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/introduction-to-dp/0"
+          },
+          {
+            "question": "Shortest Path in Weighted undirected graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/0"
+          },
+          {
+            "question": "Dijkstra Algorithm",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/0"
+          },
+          {
+            "question": "Shortest path in Undirected Graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/0"
+          },
+          {
+            "question": "Directed Graph Cycle",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/0"
+          },
+          {
+            "question": "Topological sort",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/topological-sort/0"
+          },
+          {
+            "question": "Eventual Safe States",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/eventual-safe-states/0"
+          },
+          {
+            "question": "Replace O's with X's",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/replace-os-with-xs0052/0"
+          },
+          {
+            "question": "Undirected Graph Cycle",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/0"
+          },
+          {
+            "question": "Find the number of islands",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/0"
+          },
+          {
+            "question": "Number of Provinces",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/number-of-provinces/0"
+          },
+          {
+            "question": "Job Sequencing Problem",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/0"
+          },
+          {
+            "question": "Row with max 1s",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/0"
+          },
+          {
+            "question": "Minimum Platforms",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/0"
+          },
+          {
+            "question": "Rat in a Maze Problem - I",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/0"
+          },
+          {
+            "question": "Subset Sums",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/subset-sums2234/0"
+          },
+          {
+            "question": "Delete all occurrences of a given key in a doubly linked list",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/delete-all-occurrences-of-a-given-key-in-a-doubly-linked-list/0"
+          },
+          {
+            "question": "Add 1 to a Linked List Number",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/0"
+          },
+          {
+            "question": "Union of Two Sorted Arrays",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/0"
+          },
+          {
+            "question": "Kadane's Algorithm",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/0"
+          },
+          {
+            "question": "Split It Up",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/split-it-up--213923/0"
+          },
+          {
+            "question": "Minimum Time",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/minimum-time-1669283572--113941/0"
+          },
+          {
+            "question": "Bipartite Graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/bipartite-graph/0"
+          },
+          {
+            "question": "Distance of nearest cell having 1",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/0"
+          },
+          {
+            "question": "Flood fill Algorithm",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/flood-fill-algorithm1856/0"
+          },
+          {
+            "question": "Gray to Binary equivalent",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/gray-to-binary-equivalent-1587115620/0"
+          },
+          {
+            "question": "LCA in  Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/0"
+          },
+          {
+            "question": "Sum of nodes on the longest path from root to leaf node",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/0"
+          },
+          {
+            "question": "Bottom View of Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/0"
+          },
+          {
+            "question": "Top View of Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/0"
+          },
+          {
+            "question": "Tree Boundary Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/0"
+          },
+          {
+            "question": "ZigZag Tree Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/0"
+          },
+          {
+            "question": "Sum Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/sum-tree/0"
+          },
+          {
+            "question": "Diameter of a Binary Tree",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/0"
+          },
+          {
+            "question": "Number Of Enclaves",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/number-of-enclaves/0"
+          },
+          {
+            "question": "Rotten Oranges",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/rotten-oranges2536/0"
+          },
+          {
+            "question": "Diagonal Tree Traversal",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/0"
+          },
+          {
+            "question": "Binary Tree from Inorder and Postorder",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/0"
+          },
+          {
+            "question": "Number of occurrence",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/0"
+          },
+          {
+            "question": "First and Last Occurrences",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/0"
+          },
+          {
+            "question": "Find the element that appears once",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/element-appearing-once2552/0"
+          },
+          {
+            "question": "Shortest Job first",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/shortest-job-first/0"
+          },
+          {
+            "question": "Shortest path in Directed Acyclic Graph",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/0"
+          },
+          {
+            "question": "Distance from the Source (Bellman-Ford Algorithm)",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/0"
+          }
+        ]
+      },
+      "hard": {
+        "count": 1,
+        "questions": [
+          {
+            "question": "Alien Dictionary",
+            "questionUrl": "https://practice.geeksforgeeks.org/problems/alien-dictionary/0"
+          }
+        ]
+      }
+    }
+  }
