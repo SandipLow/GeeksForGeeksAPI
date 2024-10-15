@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, Response, render_template
 from flask_restful import Api, Resource
 from modules.scrap import scrap
 
@@ -17,8 +17,9 @@ api.add_resource(geeksforgeeksAPI, "/userdata/<string:username>")
 def stats(username):
     scrapper = scrap(username)
     userdata = scrapper.fetchResponse()
-
-    return render_template('stats.html', userdata=userdata)
+    svg = render_template('stats.html', userdata=userdata)
+    
+    return Response(svg, mimetype='image/svg+xml')
 
 
 if __name__ == "__main__":
