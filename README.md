@@ -57,7 +57,17 @@ The API was built using Web Scraping the profile page and a server deployed on w
 ---
 
 ### Sample API Responses
-#### Success Response
+
+
+#### Sample stats Image
+https://geeks-for-geeks-stats.vercel.app/stats/aganswiar
+
+<img src="https://geeks-for-geeks-stats.vercel.app/stats/aganswiar" alt="sample image" >
+
+--- 
+
+#### Userdata: Success Response
+https://geeks-for-geeks-stats.vercel.app/userdata/aganswiar
 ```
 {
     "info": {
