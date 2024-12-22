@@ -7,57 +7,46 @@ class scrap():
         self.username = username
     
     def fetchResponse(self):
-        BASE_URL = 'https://auth.geeksforgeeks.org/user/{}/practice/'.format(self.username)
-
-        def extract_text_from_elements(elements, element_keys):
-            result = {}
-            index = 0
-            for element in elements:
-                try:
-                    inner_text = element.text
-                    if inner_text == '_ _':
-                        result[element_keys[index]] = ""
-                    else:
-                        result[element_keys[index]] = inner_text
-                except: 
-                    result[element_keys[index]] = ""
-                index += 1
-            return result
+        BASE_URL = 'https://www.geeksforgeeks.org/user/{}/'.format(self.username)
 
         def extract_details(soup):
-            basic_details_by_index = ["institution", "languagesUsed", "campusAmbassador"]
-            coding_scores_by_index = ["codingScore", "totalProblemsSolved", "monthlyCodingScore", "articlesPublished"]
-            basic_details = soup.find_all("div", class_ = "basic_details_data")
-            coding_scores = soup.find_all("span", class_ = "score_card_value")
             response = {}
-            response["basic_details"] = extract_text_from_elements(basic_details, basic_details_by_index)
-            response["coding_scores"] = extract_text_from_elements(coding_scores, coding_scores_by_index)
-            return response 
+            conding_scores = soup.find_all("div", class_ = "scoreCard_head__nxXR8")
             
-        def extract_questions_by_difficulty(soup, difficulty):
-            try: 
-                response = {}
-                questions = []
-                question_list_by_difficulty_tag = soup.find("div", id = difficulty.replace("#", "")).find_all("a")
-                response["count"] = len(question_list_by_difficulty_tag)
+            for score in conding_scores:
+
+                title= score.find("div", class_ = "scoreCard_head_left--text__KZ2S1").text
+                value = score.find("div", class_ = "scoreCard_head_left--score__oSi_x").text
+
+                if value == "__":
+                    continue
                 
-                for question_tag in question_list_by_difficulty_tag:
-                    question = {}
-                    question["question"] = question_tag.text
-                    question["questionUrl"] = question_tag["href"]
-                    questions.append(question)
+                title = title.replace(" ", "")
+                title = ''.join(title[0].lower() + title[1:])
 
-                response["questions"] = questions
-                return response
-            except:
-                return { "count": 0, "questions": [] }
+                response[title] = value
 
-        def extract_questions_solved_count(soup):
-            difficulties = ["#school", "#basic", "#easy", "#medium", "#hard"]
+            return response 
+
+        def extract_questions(soup):
             result = {}
-            for difficulty in difficulties:
-                result[difficulty] = extract_questions_by_difficulty(soup, difficulty)
-                
+            
+            difficulties = list(filter(lambda x: x.text.split(' ')[1] != "(0)", soup.find_all("div", class_="problemNavbar_head_nav__a4K6P")))
+            questions = soup.find_all("div", class_ = "problemList_head__FfRAd")
+
+            for difficulty, question in zip(difficulties, questions):
+                q_list = question.find_all("a")
+                qs = list(map(lambda x: { "question": x.text, "questionUrl": x["href"] }, q_list))
+
+                title = difficulty.text.lower().split(' ')[0]
+                cnt = len(qs)
+
+                result[title] = {
+                    "count": cnt,
+                    "questions": qs
+                }
+
+
             return result
 
         profilePage = requests.get(BASE_URL)
@@ -70,19 +59,31 @@ class scrap():
 
             generalInfo["userName"] = self.username
             
-            profile_pic = soup.find("img", class_ = "profile_pic")
-            institute_rank = soup.find("span", class_ = "rankNum")
-            streak_count = soup.find("div", class_ = "streakCnt")
+            profile_pic = soup.select_one("div.profilePicSection_head_img__1GLm0 img")
+            instituton = soup.find("div", class_ = "educationDetails_head_left--text__tgi9I")
+            institute_rank = soup.find("span", class_ = "educationDetails_head_left_userRankContainer--text__wt81s")
+            languagesUsed = soup.find("div", class_ = "educationDetails_head_right--text__lLOHI")
+            streak_count = soup.find("div", class_ = "circularProgressBar_head_mid_streakCnt__MFOF1 tooltipped")
 
             try:
-                generalInfo["profilePicture"] = profile_pic["src"]
+                generalInfo["profilePicture"] = profile_pic.get("src")
             except:
                 generalInfo["profilePicture"] = ""
+
+            try: 
+                generalInfo["institute"] = instituton.text
+            except:
+                generalInfo["institute"] = ""
 
             try:
                 generalInfo["instituteRank"] = institute_rank.text
             except:
                 generalInfo["instituteRank"] = ""
+
+            try:
+                generalInfo["languagesUsed"] = languagesUsed.text
+            except:
+                generalInfo["languagesUsed"] = ""
 
             try:
                 streak_details = streak_count.text.replace(" ", "").split("/")
@@ -94,14 +95,13 @@ class scrap():
 
 
             additional_details = extract_details(soup)
-            question_count_details = extract_questions_solved_count(soup)
+            question_count_details = extract_questions(soup)
             
-            for _ , value in additional_details.items():
-                for _key, _value in value.items():
-                    generalInfo[_key] = _value
+            for _key , _value in additional_details.items():
+                generalInfo[_key] = _value
 
-            for key, value in question_count_details.items():
-                solvedStats[key.replace("#", "")] = value
+            for _key, value in question_count_details.items():
+                solvedStats[_key] = value
 
             response["info"] = generalInfo
             response["solvedStats"] = solvedStats

@@ -5,6 +5,10 @@ from modules.scrap import scrap
 app = Flask(__name__)
 api = Api(app)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 class geeksforgeeksAPI(Resource):
     def get(self, username):
         scrapper = scrap(username)

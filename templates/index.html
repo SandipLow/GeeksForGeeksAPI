@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unofficial GFG API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+            --header-bg: #007acc;
+            --header-text: white;
+        }
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --header-bg: #1e1e1e;
+            --header-text: #00bcd4;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--header-bg);
+            color: var(--header-text);
+        }
+        header img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        code {
+            background: var(--bg-color);
+            padding: 0.2rem 0.4rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Consolas, "Courier New", monospace;
+        }
+        .center {
+            text-align: center;
+        }
+        .badge {
+            margin: 0.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: var(--header-bg);
+            color: var(--header-text);
+        }
+        footer img {
+            max-width: 150px;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .input-container input {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+        }
+        .input-container button {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            background: var(--header-bg);
+            color: var(--header-text);
+            cursor: pointer;
+        }
+        .input-container button:hover {
+            background: var(--header-text);
+            color: var(--header-bg);
+        }
+        .output {
+            margin-top: 2rem;
+        }
+        .output img {
+            width: 40rem;
+            max-width: 80vw;
+        }
+        .dark-mode-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            cursor: pointer;
+        }
+        .dark-mode-toggle button {
+            background: var(--header-bg);
+            color: var(--header-text);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s, color 0.3s;
+        }
+        .dark-mode-toggle button:hover {
+            transform: scale(1.1);
+            background: var(--header-text);
+            color: var(--header-bg);
+        }
+    </style>
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <button onclick="toggleDarkMode()">
+            <i id="theme-icon" class="fas fa-sun"></i>
+        </button>
+    </div>    
+    <header>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png" alt="GFG Logo">
+        <h1>Unofficial GFG API</h1>
+        <h3>An unofficial API for GeeksForGeeks for developers to make cool stuff using GFG profile data.</h3>
+    </header>
+    <main>
+        <section class="input-container">
+            <input type="text" id="username" placeholder="Enter GFG Username">
+            <button onclick="fetchUserData()">Show User Data</button>
+            <button onclick="fetchUserImage()">Show Profile Image</button>
+        </section>
+        <section class="output" id="output"></section>
+    </main>
+    <footer>
+        <p>Built with ❤️ by a noob developer.</p>
+        <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="Built with Love">
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            const isDark = body.getAttribute('data-theme') === 'dark';
+            body.setAttribute('data-theme', isDark ? '' : 'dark');
+            themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon'; // Toggle icons
+        }
+
+        async function fetchUserData() {
+            const username = document.getElementById('username').value.trim();
+            const output = document.getElementById('output');
+            if (!username) {
+                output.innerHTML = '<p>Please enter a username.</p>';
+                return;
+            }
+            try {
+                const response = await fetch(`/userdata/${username}`);
+                if (!response.ok) throw new Error('User not found');
+                const data = await response.json();
+                output.innerHTML = `
+                    <h2>User Data</h2>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                output.innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        async function fetchUserImage() {
+            const username = document.getElementById('username').value.trim();
+            const output = document.getElementById('output');
+            if (!username) {
+                output.innerHTML = '<p>Please enter a username.</p>';
+                return;
+            }
+            output.innerHTML = `
+                <h2>Profile Image</h2>
+                <img src="/stats/${username}" alt="Profile Image">
+            `;
+        }
+    </script>
+</body>
+</html>
